@@ -1,0 +1,8 @@
+# Starting with - 10007000
+
+alert any any any -> any (msg: "[NW-SECDO] IOC Hostname"; content: "|7C|IOC_hostname|7C|"; classtype: misc-activity; program: CEF; normalize; sid: 10007000; rev:1;)
+alert any any any -> any (msg: "[NW-SECDO] IOC MD5 Hash"; content: "|7C|IOC_md5hash|7C|"; classtype: misc-activity; program: CEF; normalize; sid: 10007001; rev:1;)
+alert any any any -> any (msg: "[NW-SECDO] IOC Filename"; content: "|7C|IOC_filename|7C|"; classtype: misc-activity; program: CEF; normalize; sid: 10007002; rev:1;)
+alert any any any -> any (msg: "[NW-SECDO] IOC Dest IP"; content: "|7C|IOC_dest_ip|7C|"; classtype: misc-activity; program: CEF; normalize; sid: 10007003; rev:1;)
+alert any any any -> any (msg: "[NW-SECDO] IOC Complex"; content: "|7C|IOC_complex|7C|"; classtype: misc-activity; program: CEF; normalize; sid: 10007004; rev:1;)
+alert any any any -> any (msg: "[NW-SECDO] Powershell"; content: "|7C|Powershell|7C|"; classtype: misc-activity; program: CEF; normalize; sid: 10007005; rev:1;)
